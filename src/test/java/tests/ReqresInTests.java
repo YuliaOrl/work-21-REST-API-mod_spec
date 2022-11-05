@@ -52,6 +52,7 @@ public class ReqresInTests {
                 .as(GetSingleResponseLombokModel.class);
 
         assertThat(response.getData().getId()).isEqualTo(2);
+        assertThat(response.getData().getEmail()).isEqualTo("janet.weaver@reqres.in");
         assertThat(response.getData().getFirst_name()).isEqualTo("Janet");
         assertThat(response.getData().getLast_name()).isEqualTo("Weaver");
         assertThat(response.getData().getAvatar()).isEqualTo("https://reqres.in/img/faces/2-image.jpg");
