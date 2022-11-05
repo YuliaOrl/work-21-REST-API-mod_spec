@@ -114,7 +114,6 @@ public class ReqresInTests {
     @Test
     @DisplayName("Тест на удаление пользователя")
     void checkDeleteTest() {
-
         given()
                 .spec(deleteRequestSpec)
                 .when()
