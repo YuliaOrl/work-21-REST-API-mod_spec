@@ -53,8 +53,8 @@ public class ReqresInTests {
 
         assertThat(response.getData().getId()).isEqualTo(2);
         assertThat(response.getData().getEmail()).isEqualTo("janet.weaver@reqres.in");
-        assertThat(response.getData().getFirst_name()).isEqualTo("Janet");
-        assertThat(response.getData().getLast_name()).isEqualTo("Weaver");
+        assertThat(response.getData().getFirstName()).isEqualTo("Janet");
+        assertThat(response.getData().getLastName()).isEqualTo("Weaver");
         assertThat(response.getData().getAvatar()).isEqualTo("https://reqres.in/img/faces/2-image.jpg");
         assertThat(response.getSupport().getUrl()).isEqualTo("https://reqres.in/#support-heading");
         assertThat(response.getSupport().getText()).isEqualTo("To keep ReqRes free, contributions towards server costs are appreciated!");
